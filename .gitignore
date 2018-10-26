@@ -1,0 +1,11 @@
+*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+<<<<<<< HEAD
+.DS_Store
+=======
+.DS_Store
+>>>>>>> 48922223700d96126052678f09c9dfebc762821f
