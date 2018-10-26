@@ -15,3 +15,16 @@ class Post(models.Model):
     
     def __str__(self):
         return self.title
+
+
+class Profile(models.Model):
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    birthday = models.DateField()
+    country = models.CharField(max_length=50)
+    city = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.user.first_name
+
+
+
